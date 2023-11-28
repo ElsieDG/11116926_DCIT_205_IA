@@ -1,6 +1,7 @@
 
 body { 
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(245, 252, 255);
 }
 
 body, html {
@@ -9,8 +10,42 @@ body, html {
 }
 
 .text{
-  padding-top: 70px;
-  margin-left: 80px;
-  margin-right: 80px;
+  padding-top: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
   text-align: justify;
+  font-family: 'Quicksand', sans-serif;
+  size: 18px;
+  font-style: normal;
  }
+
+ @media screen and (max-width: 900px) {
+  .text{
+    margin-right: 50px;
+    margin-left: 0px;
+  }
+ }
+
+ p{
+  font-family: 'Quicksand', sans-serif;
+   size: 18px;
+   font-style: normal;
+ }
+
+ h4{
+  font-family: 'Quicksand', sans-serif;
+  size: 400px;
+  font-weight:700px;
+ }
+
+ section{
+  font-family: 'Quicksand', sans-serif;
+  size: 18px;
+  font-style: normal;
+ }
+
+ @media screen and (max-width: 900px) {
+ .text{
+
+ }
+}
