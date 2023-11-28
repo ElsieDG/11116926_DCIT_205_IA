@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/general.css">
+<link rel="stylesheet" href="styles/banners.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&family=Roboto:wght@400;500;700&family=Saira+Extra+Condensed:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* {box-sizing: border-box}
+
+
+.tab {
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100px;
+  border: solid;
+
+}
+
+.tab button {
+  color: white;
+  font-weight: bold;
+  padding: 10px 10px;
+  width: 100%;
+  height: 200px;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.register{
+  background-color:#BD9C6C;  
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.register:hover{
+  background-color:#dfd0b9;  
+  text-decoration: none;
+  
+}
+
+.tab button:hover {
+  color: #BD9C6C;
+}
+
+.tab button.active {
+  background-color: lightblue;
+  border-bottom: none;
+}
+
+.program-banner-background.sc{
+  padding-top: 0;
+  margin-top: 100px; 
+  margin-bottom: 20px;
+  padding-right: 10px;
+  text-align: right;
+  opacity: 1;
+  background-color: rgb(5, 43, 97);
+  } 
+
+.program-banner-background.sc text{
+      color:#f1f1f1;
+      margin-bottom: 20px; 
+      text-align: right; 
+      font-size: 50px;
+}  
+
+.tabcontent {
+  float: none;
+  background-color: inherit;
+  display: block;
+  padding: 0px 1px;
+  width: 100%;
+  height: 400px;
+  color: black;
+  padding-left: 20px;
+  padding-top: 100px;
+  border-style: solid;
+}
+
+@media screen and (max-width: 900px) { 
+      .tab button {
+        font-size: 12px;
+        height: auto; 
+      }
+
+      .program-banner-background.sc {
+        margin-top: 250px;
+        margin-bottom: 10px;
+      }
+
+      .program-banner-background.sc text {
+        text-align: right;
+        margin-bottom: 10px;
+        font-size: 30px; 
+      }
+
+      .program-banner-background {
+        margin-top: 20px;
+      }
+
+      section.join-section {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      .footer-section {
+        text-align: center; 
+      }
+    
+      .tabcontent{
+        padding-top: 20px;
+      }
+
+    }
+  </style>
+</style>
+</head>
+<body>
+
+  <section>
+    <div class="header">
+      <img src="pictures/comScience_logo.png" class="logo">
+      
+      <div class="header-right" id="headerRight">
+
+        <a href="homepage.html" target="_self">Home</a>
+       
+        <div class="dropdown">
+          <button class="dropbtn">Academics</button>
+          <div class="dropdown-content">
+            <a  href="undergrad.html"> Undergraduate</a>
+            <a  href="mphil.html">Mphil And MSC</a>
+            <a href="phd.html">PhD</a>
+            <a  href="shortCouses.html">Short Courses</a> 
+            <a  href="#">Entry Requirements</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">About</button>
+          <div class="dropdown-content">
+            <a href="news.html">News And Events</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+            <a href="community.html">Student Community</a>
+          </div>
+        </div>
+      
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction2()">&#9776;</a>  
+        
+      </div>
+    </div>
+  </section>
+
+<section class="join-section" style="margin-right: 180px; margin-left: 160px;
+margin-top: 10px; padding-bottom: 500px;">
+
+  <div class="program-banner-background sc">
+      <text>Join Our Short Courses Programmes!</text>
+  </div>
+  
+
+    <div class="program-banner-background" style="opacity: 1;">
+      <div class="tab" style="display: flex; flex-direction: row; margin-right: 200px;" >
+        <button style="
+        background: url(../pictures/f4c55b97422cae408d6cb207a29c8592.jpg);" class="tablinks" onclick="openCity(event, 'Intro to programming')" id="defaultOpen">Introduction to Web Programming
+        </button>
+        <button style="background: url(../pictures/638f1d_8538d494025d485bb7308da2b2b3e2af~mv2_d_1243_1213_s_2.jpg); background-size:cover;" class="tablinks" onclick="openCity(event, 'Info security')">Information security and Ethical Hacking</button>
+        <button style="background: url(../pictures/OIP_2_.jpg); background-size:cover;" class="tablinks" onclick="openCity(event, 'C.N.F')">Computer Network Fundamentals</button>
+        <button style="background: url(../pictures/mobdev.jpg); background-size:cover;" class="tablinks" onclick="openCity(event, 'Mobile app dev')" id="defaultOpen"> Mobile Application Development</button>
+      </div>
+    </div>
+    <div>
+      <div style="display: flex; flex-direction: row;">
+        <div id="Intro to programming" class="tabcontent">
+          <h3>Introduction to Web Programming</h3>
+          <p>Understand the fundamentals of web technologies and create web-based
+            applications with latest technologies. <br>
+            <button class="register">Register now</button>
+
+          </p>
+
+        </div>
+
+        <div id="Info security" class="tabcontent">
+          <h3>Information security and Ethical Hacking</h3>
+          <p>Learn the various techniques used to secure a computer system from attacks through hacking.<br>
+            <button class="register">Register now</button></p> 
+        </div>
+
+        <div id="C.N.F" class="tabcontent">
+          <h3>Computer Network Fundamentals</h3>
+          <p>We provide quality training for students to become a Cisco Certified Network Associate (CCNA).
+            <br>
+            <button class="register">Register now</button>
+          </p>
+        </div>
+
+        <div id="Mobile app dev" class="tabcontent">
+          <h3>Mobile Application Development</h3>
+          <p>We provide world class technologies for Mobile Application Development using the mobile-first worklight by IBM.
+            <br>
+            <button class="register">Register now</button>
+          </p> 
+        </div>
+     </div>
+    </div>
+</div>    
+</section>
+
+<section>
+  <div class="footer">
+
+    <div class="footer-section">
+       <h3>About Us</h3>
+       <p>University Of Ghana Department of Computer Science</p>
+       <p>Legon Campus <br>
+        Opposite Mathematics Department</p>
+    </div>
+
+    <div class="footer-section">
+       <h3>Quick Links</h3>
+       <ul>
+         <li><a href="undergrad.html">Undergraduate</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="community.html">Community</a></li>
+       </ul>
+    </div>
+    <div class="footer-section">
+       <h3>Social Media</h3>
+       <ul>
+         <li><a href="https://www.bing.com/ck/a?!&&p=a13806c284add3ecJmltdHM9MTcwMTEyOTYwMCZpZ3VpZD0wNzcxMWMxMC00NzVhLTZkZTEtMTQ2My0wZmQyNDYzZDZjMTcmaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=07711c10-475a-6de1-1463-0fd2463d6c17&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1">Facebook</a></li>
+         <li><a href="https://www.bing.com/ck/a?!&&p=2517a11fbd68c6d5JmltdHM9MTcwMTEyOTYwMCZpZ3VpZD0wNzcxMWMxMC00NzVhLTZkZTEtMTQ2My0wZmQyNDYzZDZjMTcmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=07711c10-475a-6de1-1463-0fd2463d6c17&psq=twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8&ntb=1">Twitter</a></li>
+         <li><a href="https://www.bing.com/ck/a?!&&p=bc3cc10b15034cabJmltdHM9MTcwMTEyOTYwMCZpZ3VpZD0wNzcxMWMxMC00NzVhLTZkZTEtMTQ2My0wZmQyNDYzZDZjMTcmaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=07711c10-475a-6de1-1463-0fd2463d6c17&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8_aGw9ZW4&ntb=1">Instagram</a></li>
+         <li><a href="https://www.bing.com/ck/a?!&&p=63eab313da3f3231JmltdHM9MTcwMTEyOTYwMCZpZ3VpZD0wNzcxMWMxMC00NzVhLTZkZTEtMTQ2My0wZmQyNDYzZDZjMTcmaW5zaWQ9NTE5Ng&ptn=3&ver=2&hsh=3&fclid=07711c10-475a-6de1-1463-0fd2463d6c17&psq=linkedin&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tLw&ntb=1">LinkedIn</a></li>
+       </ul>
+    </div>
+    <div class="footer-section">
+       <h3>Contact Us</h3>
+      <p>
+        <h4>Telephone</h4>
+        +233 501 382 035 <br>
+        Mon to Fri 9am to 5pm <br> <br>
+  
+        +233 559 145 698 <br>
+        Mon to Fri 9am to 5pm <br>
+      </p>  
+    </div>
+   </div>
+  </section>
+
+
+<script>
+function openCity(evt, courseName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(courseName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+function myFunction2() {
+  var x = document.getElementById("headerRight");
+  if (x.className === "header-right") {
+    x.className += " responsive";
+  } else {
+    x.className = "header-right";
+  }
+}
+</script>
+   
+</body>
+</html> 
