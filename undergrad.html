@@ -1,0 +1,385 @@
+ 
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/general.css">
+<link rel="stylesheet" href="styles/banners.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&family=Roboto:wght@400;500;700&family=Saira+Extra+Condensed:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <section >
+    <div class="header">
+      <img src="pictures/comScience_logo.png" class="logo">
+      
+      <div class="header-right" id="headerRight">
+
+        <a href="homepage.html" target="_self">Home</a>
+       
+        <div class="dropdown">
+          <button class="dropbtn">Academics</button>
+          <div class="dropdown-content">
+            <a  href="undergrad.html"> Undergraduate</a>
+            <a  href="mphil.html">Mphil And MSC</a>
+            <a href="phd.html">PhD</a>
+            <a  href="shortCouses.html">Short Courses</a> 
+            <a  href="#">Entry Requirements</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">About</button>
+          <div class="dropdown-content">
+            <a href="news.html">News And Events</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+            <a href="community.html">Student Community</a>
+          </div>
+        </div>
+      
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction2()">&#9776;</a>  
+        
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 75px;">
+    <div class="page-banner">
+      <img class="program-banner-background" src="pictures/umat-petroleum-department.jpg" alt="Department picture">
+      <div class="text-box">
+        <h1 style="background-color:rgba(5, 43, 97, 0.756);padding-top: 5px; padding-bottom: 5px;  ;">Undergraduate Programmes</h1>
+      </div>
+  </section>
+
+  <section class="description" style="margin-top: 50px; margin-left: 100px; margin-right: 100px; text-align: justify; text-wrap:pretty;">
+    <p>
+      The Department offers two undergraduate degree programmes,  Bachelor of Science in Computer Science Single-Major (3:2:1:1) and Major-Minor (3:2:2:1) as well as Bachelor of Science in Information Technology. <br>
+
+      To qualify for admission into Computer Science programmes at Level 200, candidates must have taken the following courses at Level 100:
+      
+      MATH 121: Algebra and Trigonometry
+      MATH 122: Calculus I CSCD 101: Introduction to Computer Science I
+      CSCD 102: Introduction to Computer Science II <br>
+      Every student in the Department of Computer Science must own his or her laptop with minimum specification of:
+      
+      i3 64-bit Processor
+      8GB RAM
+      500GB HD or 256 SSD    
+    </p>
+  </section>
+
+<section style="margin-top: 100px; padding-bottom: 300px;">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 10px;">
+    <div>
+      <h3 style="text-align: center;">BSc. Information Technology</h3>
+        <button class="accordion">Level 100</button>
+      <div class="panel">
+           <h4>First Semester</h4>
+          <p> UGRC 150	 -	Critical Thinking and Practical Reasoning <br>
+          DCIT 101	 -	Introduction to Computer Science<br>
+          DCIT 103	 -	Office Productivity Tools<br>
+          DCIT 105	 -	Mathematics for IT Professionals<br>
+          STAT 111	 -	Introduction to Statistics and Probability I<br></p>
+          <h4>ELECTIVES:</h4>
+          <p>MATH 121	 -	Algebra and Trigonometry<br>
+          MATH 123	 -	Vectors and Geometry<br>
+          ECON 101	 -	Introduction to Economics I<br> </p>
+
+          <h4>Second Semester</h4>
+         <p> UGRC 110	 -	Academic Writing I<br>
+          UGRC 131-136	 -	Understanding Human Society<br>
+          MATH 122	 -	Calculus I<br>
+          MATH 126	 -	Algebra and Geometry
+          STAT 112	 -	Introduction to Statistics and Probability II<br>
+          DCIT 104	 -	Programming<br>
+          DCIT 102	 -	Computer Hardware Fund. and Circuits<br></p>
+        </p>
+      </div>
+
+      <button class="accordion">Level 200</button>
+      <div class="panel">
+        <p>
+          <h4>First Semester</h4>
+          <p>UGRC 210	 -	Academic Writing II<br>
+          DCIT 201 -		Programming I<br>
+          DCIT 203	 -	Digital and Logic Systems Design<br>
+          DCIT 205 -		Multi Media and Web Design<br>
+          DCIT 207	 -	Computer Architecture & Organisation<br>
+          DCIT 209 -		E-Business Architectures<br></p>
+
+         <h4>Second Semester</h4>
+          <p>UGRC 220	 -	Introduction to African Studies<br>
+          DCIT 202 -		Mobile Application Development<br>
+          DCIT204 -		Data Structures & Algorithm I<br>
+          DCIT206	 -	Systems Administration<br>
+          DCIT208	 -	Software Engineering<br></p>
+          <h4>ELECTIVES:</h4>
+          <p>>DCIT 200 -		Internship<br>
+          DCIT 212	 -	Numerical and Computational Methods
+          DCIT 214	 -	Information Modeling and Specification<br>
+
+        </p>
+      </div>
+
+      <button class="accordion">Level 300</button>
+      <div class="panel">
+           <h4>First Semester</h4>
+         <p> DCIT 301	Operating Systems<br>
+          DCIT 303 -		Computer Networks<br>
+          DCIT 305	 -	Database Fundamentals<br>
+          DCIT 313	 -	Introduction to Artificial Intelligence<br>
+          DCIT 317 -		IT Project Management<br></p>
+          <h4>ELECTIVES:</h4>
+          DCIT 307	 -	Mini-Project<br>
+          DCIT 315	 -	Principles of 3D Environment
+          DCIT 321	 -	Software Evolution<br></p>
+
+          <h4>Second Semester</h4>
+          <p>DCIT 302	 -	Human Computer Interaction<br>
+          DCIT 304	 -	Research Methods<br>
+          DCIT 308 -		Data Structures and Algorithms II<br>
+          DCIT 312	 -	Information Security Management
+          DCIT 318	 -	Programming II<br>
+          <h4>ELECTIVES:</h4>
+          <p>DCIT 314 -		Game Engine Architecture<br>
+          DCIT 322	 -	Database Management Administration<br>
+
+        </p>
+      </div>
+
+      <button class="accordion">Level 400</button>
+      <div class="panel">
+        <p>
+          <h4>First Semester</h4>
+          <p>DCIT 400 -		Project<br>
+          DCIT 401	 -	Social, Legal, Ethical and Professional Issues<br>
+          DCIT 409	 -	Digital Forensics</p>
+          <h4>ELECTIVES:</h4>
+          <p>DCIT 413 -		Play and Games<br>
+          DCIT 415	 -	Advanced Software Engineering<br>
+          DCIT 419 -		Agile Methods
+          DCIT 421	 -	Persuasive Systems Development<br></p>
+
+          <h4>Second Semester</h4>
+         <p> DCIT 400	Project
+          DCIT 402	 -	Management Principles in Computing<br>
+          DCIT 418	 -	Systems and Network Security<br>
+          DCIT 428 -		Wireless Systems and Networks<br>
+          DCIT 318 -		Programming II<br></p>
+          <h4>ELECTIVES:</h4>
+          <p>DCIT 404 -		Advanced Databases<br>
+          DCIT 406	 -	Advanced Computer Networks<br>
+          DCIT 408	 -	Compilers
+          DCIT 426	 -	Telecommunication Systems<br>
+          DCIT 412	 -	Computer Vision<br>
+          DCIT 414	 -	Data Mining and <br>
+          DCIT 416 -		Digital Signal Processing<br>
+          DCIT 422	 -	Information Visualization<br></p>
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h3 style="text-align: center;"> BSc Computer Science <br></h3>
+        <button class="accordion">Level 100</button>
+      <div class="panel">
+         <h4>First Semester</h4>
+         <p>UGRC 150 -		Critical Thinking and Practical Reasoning <br>
+          MATH 121 -	Algebra and Trigonometry<br>
+          MATH 123	 -	Vectors and Geometry<br>
+          DCIT 101 -		Introduction to Computer Science<br>
+          DCIT 103	 -	Office Productivity Tools<br>
+          STAT 111	 -	Introduction to Statistics and Probability I<br></p>
+          
+          <h4>Second Semester</h4>
+          <p>UGRC 110	 -	Academic Writing I<br>
+          UGRC 131-136	 -	Understanding Human Society<br>
+          MATH 122	 -	Calculus I<br>
+          MATH 126	 -	Algebra and Geometry<br>
+          STAT 112	 -	Introduction to Statistics and Probability II<br>
+          DCIT 104	 -	Programming
+          DCIT 102	 -	Computer Hardware Fund. and Circuits<br>
+          </p>
+      </div>
+
+      <button class="accordion">Level 200</button>
+      <div class="panel">
+          <h4>First Semester</h4>
+          <p>UGRC  -	210	Academic Writing II<br>
+        DCIT 201	 -	Programming I<br>
+        DCIT 203	 -	Digital and Logic Systems Design<br>
+        DCIT 205	 -	Multi Media and Web Design<br>
+        DCIT 207	 -	Computer Architecture & Organisation<br>
+        MATH 223	 -	Calculus II<br> </p>
+
+       <h4>Second Semester</h4>
+         <p>UGRC 220	 -	Introduction to African Studies<br>
+        DCIT 202	 -	Mobile Application Development<br>
+        DCIT 204	 -	Data Structures & Algorithm I<br>
+        DCIT206	 -	Systems Administration<br>
+        DCIT208 -		Software Engineering<br>
+        DCIT 212	 -	Numerical and Computational Methods<br>
+
+        </p>
+      </div>
+
+      <button class="accordion">Level 300</button>
+      <div class="panel">
+        <p> 
+          <h4>First Semester</h4>
+         <p>DCIT 301 -		Operating Systems <br>
+        DCIT 303	 -	Computer Networks<br>
+        DCIT 305 -		Database Fundamentals<br>
+        DCIT 313	 -	Introduction to Artificial Intelligence<br>
+        MATH 359 -		Discrete Mathematics<br></p>
+        ELECTIVES:
+        <p>DCIT 307	 -	Mini-Project<br>
+        DCIT 309	 -	Embedded Systems and IoT<br>
+        DCIT 311 -		Machine Learning<br></p>
+
+        <h4>Second Semester</h4>
+         <h4>ELECTIVES:</h4>
+       <p> DCIT 400	 -	Project<br>
+        DCIT 401	 -	Social, Legal, Ethical and Professional Issues<br>
+        DCIT 407	 -	Image Processing<br>
+        DCIT 306	 -	Cloud Computing Numerical<br>
+        and Computational Methods<br>
+        DCIT 316 -		Computational models for
+        Social Media Mining<br></p>
+        
+      </div>
+
+      <button class="accordion">Level 400</button>
+      <div class="panel">
+          <h4>First Semester</h4>
+         <p>DCIT 400	 -	Project<br>
+        DCIT 401	 -	Social, Legal, Ethical and Professional Issues<br>
+        DCIT 407	 -	Image Processing<br></p>
+        ELECTIVES:
+       <p> DCIT 403 -		Designing Intelligent Agents<br>
+        DCIT 405	 -	Statistical Models and Methods for Data Science<br>
+        DCIT 411	 -	Bioinformatics<br>
+        DCIT 417	 -	Network Performance Analysis and Modeling<br>
+        DCIT 423	 -	Network Servers and Infrastructure<br></p>
+
+       <h4>Second Semester</h4>
+         <p>DCIT 400	 -	Project<br>
+        DCIT 402	 -	Management Principles in Computing<br>
+        DCIT 418	 -	Systems and Network Security<br>
+        DCIT 428	 -	Wireless Systems and Networks<br></p>
+        <h4>ELECTIVES:</h4>
+         <p>DCIT 404 -		Advanced Databases<br>
+        DCIT 406	 -	Advanced Computer Networks<br>
+        DCIT 408	 -	Compilers<br>
+        DCIT 426	 -	Telecommunication Systems<br>
+        DCIT 412	 -	Computer Vision<br>
+        DCIT 414	 -	Data Mining and Warehousing<br>
+        DCIT 416	 -	Digital Signal Processing<br>
+        DCIT 422 -		Information Visualization<br>
+                </p>
+      </div>
+  </div>
+</div> 
+</section>
+
+<section>
+  <div class="footer">
+
+    <div class="footer-section">
+       <h3>About Us</h3>
+       <p>University Of Ghana Department of Computer Science</p>
+       <p>Legon Campus <br>
+        Opposite Mathematics Department</p>
+    </div>
+
+    <div class="footer-section">
+       <h3>Quick Links</h3>
+       <ul>
+         <li><a href="undergrad.html">Undergraduate</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="community.html">Community</a></li>
+       </ul>
+    </div>
+    <div class="footer-section">
+       <h3>Social Media</h3>
+       <ul>
+         <li><a href="https://www.bing.com/ck/a?!&&p=a13806c284add3ecJmltdHM9MTcwMTEyOTYwMCZpZ3VpZD0wNzcxMWMxMC00NzVhLTZkZTEtMTQ2My0wZmQyNDYzZDZjMTcmaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=07711c10-475a-6de1-1463-0fd2463d6c17&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1">Facebook</a></li>
+         <li><a href="https://www.bing.com/ck/a?!&&p=2517a11fbd68c6d5JmltdHM9MTcwMTEyOTYwMCZpZ3VpZD0wNzcxMWMxMC00NzVhLTZkZTEtMTQ2My0wZmQyNDYzZDZjMTcmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=07711c10-475a-6de1-1463-0fd2463d6c17&psq=twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8&ntb=1">Twitter</a></li>
+         <li><a href="https://www.bing.com/ck/a?!&&p=bc3cc10b15034cabJmltdHM9MTcwMTEyOTYwMCZpZ3VpZD0wNzcxMWMxMC00NzVhLTZkZTEtMTQ2My0wZmQyNDYzZDZjMTcmaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=07711c10-475a-6de1-1463-0fd2463d6c17&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8_aGw9ZW4&ntb=1">Instagram</a></li>
+         <li><a href="https://www.bing.com/ck/a?!&&p=63eab313da3f3231JmltdHM9MTcwMTEyOTYwMCZpZ3VpZD0wNzcxMWMxMC00NzVhLTZkZTEtMTQ2My0wZmQyNDYzZDZjMTcmaW5zaWQ9NTE5Ng&ptn=3&ver=2&hsh=3&fclid=07711c10-475a-6de1-1463-0fd2463d6c17&psq=linkedin&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tLw&ntb=1">LinkedIn</a></li>
+       </ul>
+    </div>
+    <div class="footer-section">
+       <h3>Contact Us</h3>
+      <p>
+        <h4>Telephone</h4>
+        +233 501 382 035 <br>
+        Mon to Fri 9am to 5pm <br> <br>
+  
+        +233 559 145 698 <br>
+        Mon to Fri 9am to 5pm <br>
+      </p>  
+    </div>
+   </div>
+  </section>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+function myFunction2() {
+  var x = document.getElementById("headerRight");
+  if (x.className === "header-right") {
+    x.className += " responsive";
+  } else {
+    x.className = "header-right";
+  }
+}
+</script>
+
+</body>
+</html>
