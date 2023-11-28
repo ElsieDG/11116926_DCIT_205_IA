@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/banners.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&family=Roboto:wght@400;500;700&family=Saira+Extra+Condensed:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+    
+    @media screen and (max-width: 800px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .container {
+      padding: 0 16px;
+    }
+    
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .title {
+      color: grey;
+    }
+    
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .button:hover {
+      background-color: #555;
+    }
+    </style>
+    </head>
+    <body>
+
+      <section>
+        <div class="header">
+          <img src="pictures/comScience_logo.png" class="logo">
+          
+          <div class="header-right" id="headerRight">
+    
+            <a href="homepage.html" target="_self">Home</a>
+           
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a  href="undergrad.html"> Undergraduate</a>
+                <a  href="mphil.html">Mphil And MSC</a>
+                <a href="phd.html">PhD</a>
+                <a  href="shortCouses.html">Short Courses</a> 
+                <a  href="#">Entry Requirements</a>
+              </div>
+            </div>
+    
+            <div class="dropdown">
+              <button class="dropbtn">About</button>
+              <div class="dropdown-content">
+                <a href="news.html">News And Events</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+                <a href="community.html">Student Community</a>
+              </div>
+            </div>
+          
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction2()">&#9776;</a>  
+            
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top: 75px;">
+        <div class="page-banner">
+          <img class="program-banner-background" src="pictures\OIP (1).jpg" alt="Department picture">
+          <div class="text-box">
+            <h1 style="background-color:rgba(5, 43, 97, 0.756);padding-top: 5px; padding-bottom: 5px;  ;">Student Community</h1>
+          </div>
+      </section>
+
+  <section style="margin-top: 60px;">    
+    
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="pictures\315760251__n.jpg" alt="COMPSSA" style="width:100%; height:390px;">
+          <div class="container">
+            <h2>Computer Science Students Association (COMPSSA) </h2>
+            <p class="title">University of Ghana</p>
+            <a href="https://www.facebook.com/pages/Computer%20Science%20Student%20Association(COMPSSA)%20UG/226952627412752/">Facebook</a>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="pictures/become_member-1.14c3b864.png" alt="LITG" style="width:100%; height: 390px">
+          <div class="container">
+            <h2>Ladies in Tech(LITG)</h2>
+            <p class="title">Organization</p>
+            <a href="https://www.facebook.com/GhanaLadiesInTech">Facebook</a>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <img src="pictures/R (1).jpg"  alt="We Love To Code" style="width:100%; height: 390px;">
+          <div class="container">
+            <h2>We Love To Code</h2>
+            <p class="title">University of Ghana</p>
+            <a href="https://www.facebook.com/groups/welovetocode">Facebook</a>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+
+  <section>
+    <div class="footer">
+
+      <div class="footer-section">
+         <h3>About Us</h3>
+         <p>University Of Ghana Department of Computer Science</p>
+         <p>Legon Campus <br>
+          Opposite Mathematics Department</p>
+      </div>
+  
+      <div class="footer-section">
+         <h3>Quick Links</h3>
+         <ul>
+           <li><a href="undergrad.html">Undergraduate</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="community.html">Community</a></li>
+         </ul>
+      </div>
+      <div class="footer-section">
+         <h3>Social Media</h3>
+         <ul>
+           <li><a href="https://www.bing.com/ck/a?!&&p=a13806c284add3ecJmltdHM9MTcwMTEyOTYwMCZpZ3VpZD0wNzcxMWMxMC00NzVhLTZkZTEtMTQ2My0wZmQyNDYzZDZjMTcmaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=07711c10-475a-6de1-1463-0fd2463d6c17&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1">Facebook</a></li>
+           <li><a href="https://www.bing.com/ck/a?!&&p=2517a11fbd68c6d5JmltdHM9MTcwMTEyOTYwMCZpZ3VpZD0wNzcxMWMxMC00NzVhLTZkZTEtMTQ2My0wZmQyNDYzZDZjMTcmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=07711c10-475a-6de1-1463-0fd2463d6c17&psq=twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8&ntb=1">Twitter</a></li>
+           <li><a href="https://www.bing.com/ck/a?!&&p=bc3cc10b15034cabJmltdHM9MTcwMTEyOTYwMCZpZ3VpZD0wNzcxMWMxMC00NzVhLTZkZTEtMTQ2My0wZmQyNDYzZDZjMTcmaW5zaWQ9NTE5Mg&ptn=3&ver=2&hsh=3&fclid=07711c10-475a-6de1-1463-0fd2463d6c17&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8_aGw9ZW4&ntb=1">Instagram</a></li>
+           <li><a href="https://www.bing.com/ck/a?!&&p=63eab313da3f3231JmltdHM9MTcwMTEyOTYwMCZpZ3VpZD0wNzcxMWMxMC00NzVhLTZkZTEtMTQ2My0wZmQyNDYzZDZjMTcmaW5zaWQ9NTE5Ng&ptn=3&ver=2&hsh=3&fclid=07711c10-475a-6de1-1463-0fd2463d6c17&psq=linkedin&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tLw&ntb=1">LinkedIn</a></li>
+         </ul>
+      </div>
+      <div class="footer-section">
+         <h3>Contact Us</h3>
+        <p>
+          <h4>Telephone</h4>
+          +233 501 382 035 <br>
+          Mon to Fri 9am to 5pm <br> <br>
+    
+          +233 559 145 698 <br>
+          Mon to Fri 9am to 5pm <br>
+        </p>  
+      </div>
+     </div>
+    </section>
+
+    <script>
+      function myFunction2() {
+  var x = document.getElementById("headerRight");
+  if (x.className === "header-right") {
+    x.className += " responsive";
+  } else {
+    x.className = "header-right";
+  }
+}
+    </script>
+</body>
+</html>
+
+
