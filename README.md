@@ -31,3 +31,5 @@ My name is Elsie de-Graft-Owoo, student ID number 11116926. This project was bui
 
 ![Screenshots]{https://github.com/ElsieDG/11116926_DCIT_205_IA/blob/main/pictures/screenshots/Document%20and%2017%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%2011_28_2023%208_27_53%20PM.png}
 
+## Lessons learnt
+I learnt about more css properties while doing the project. I also learnt about font awesome icons and responsiveness and will practice them more after this
